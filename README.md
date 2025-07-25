@@ -8,7 +8,7 @@ An advanced, multi-purpose Telegram bot that serves as your personal assistant. 
 
 *(A brief video showcasing the bot's features in action.)*
 
-[**Watch the Demo Here**]([http://your-demo-link-here.com](https://drive.google.com/file/d/11VfqKLtAOx4XdwhIhCJjokM_zsmTLNA4/view?usp=sharing)) <-- *Add your demo link here!*
+[**Watch the Demo Here**](https://drive.google.com/file/d/11VfqKLtAOx4XdwhIhCJjokM_zsmTLNA4/view?usp=sharing) <-- *Add your demo link here!*
 
 ---
 
