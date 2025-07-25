@@ -2,6 +2,16 @@
 
 An advanced, multi-purpose Telegram bot that serves as your personal assistant. It can engage in general conversation, read and answer questions about PDF documents you upload, and perform live web searches to provide you with up-to-the-minute information.
 
+---
+
+### 🎥 Demo Video
+
+*(A brief video showcasing the bot's features in action.)*
+
+[**Watch the Demo Here**]([http://your-demo-link-here.com](https://drive.google.com/file/d/11VfqKLtAOx4XdwhIhCJjokM_zsmTLNA4/view?usp=sharing)) <-- *Add your demo link here!*
+
+---
+
 ## 📜 Table of Contents
 
 * [Project Overview](#-project-overview)
