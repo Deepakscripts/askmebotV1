@@ -18,7 +18,7 @@ An advanced, multi-purpose Telegram bot that serves as your personal assistant. 
 
 ## 📝 Project Overview
 
-**AskMe Bot V1** is designed to be a versatile and intelligent chatbot on the Telegram platform. It goes beyond simple pre-programmed responses by integrating powerful Large Language Models (LLMs) and search technologies. Whether you need a quick answer to a general knowledge question, want to extract information from a lengthy PDF report, or need the latest news on a topic, this bot is equipped to handle your requests efficiently.
+**AskMe Bot V1** is designed to be a versatile and intelligent chatbot on the Telegram platform. It goes beyond simple pre-programmed responses by integrating powerful Large Language Models (LLMs - gpt-4.1-nano) and search technologies. Whether you need a quick answer to a general knowledge question, want to extract information from a lengthy PDF report, or need the latest news on a topic, this bot is equipped to handle your requests efficiently.
 
 The core of this project lies in its modularity, allowing for the seamless integration of different capabilities:
 1.  **Conversational AI:** For natural, human-like conversations.
@@ -42,7 +42,7 @@ Simply upload a PDF file to the chat, and the bot will read and process it. Once
 The bot uses a Retrieval-Augmented Generation (RAG) pipeline, which means it finds the most relevant parts of your document and uses that context to generate a precise answer.
 
 ### 3. **Live Web Search**
-For questions that require the most current information, you can use the web search feature. By using the `/web` command, you can ask the bot to search the internet for an answer. This is perfect for:
+For questions that require the most current information:
 * Checking the latest news headlines.
 * Getting real-time information like stock prices or weather forecasts.
 * Answering questions about recent events that a standard LLM might not know about.
@@ -56,7 +56,7 @@ This project leverages a modern stack of technologies to deliver its features.
 * **Python:** The core programming language for the bot's logic.
 * **python-telegram-bot:** A robust library for interacting with the Telegram Bot API, handling updates, and sending messages.
 * **LangChain:** The primary framework used to build the application's logic. It chains together different components, such as LLMs, document loaders, and retrieval systems, to create powerful AI applications.
-* **OpenAI API:** Provides the powerful GPT models that serve as the "brain" of the chatbot, responsible for generating responses and understanding user queries.
+* **OpenAI API:** Provides the powerful GPT models (gpt-4.1-nano) that serve as the "brain" of the chatbot, responsible for generating responses and understanding user queries.
 * **Tavily AI API:** A specialized search engine built for LLMs. It provides a clean, relevant, and accurate search API that is used for the live web search feature.
 * **FAISS (Facebook AI Similarity Search):** An extremely efficient library for similarity searching. In this project, it's used to create a vector index of the PDF document's content, allowing the bot to quickly find the most relevant text chunks to answer a user's question.
 * **PyPDF2:** A Python library used to read and extract text from PDF files, which is the first step in the document analysis pipeline.
@@ -159,9 +159,7 @@ Once the bot is running, open Telegram and find the bot you created.
     3.  Now, send your questions about the document (e.g., "What is the main conclusion of this report?"). The bot will answer based on the PDF's content.
 
 * **Web Search:**
-    1.  Use the `/web` command followed by your query.
-    2.  **Example:** `/web what is the latest news about NASA's Artemis mission?`
-    3.  The bot will perform a live search and give you a summarized answer based on the search results.
+   The bot will perform a live search and give you a summarized answer based on the search results because LLM (gpt-4.1-nano) don't have current information.
 
 ---
 
@@ -171,14 +169,14 @@ Here is a brief overview of the project's file structure to help you navigate th
 
 askmebotV1/
 ├── bot/
-│   ├── core.py         # Main bot application logic, sets up handlers
-│   ├── handlers.py     # Defines how the bot handles messages, commands, and files
-│   └── rag.py          # Contains the RAG logic for PDF and web search
+│ ├── core.py # Main bot application logic, sets up handlers
+│ ├── handlers.py # Defines how the bot handles messages, commands, and files
+│ └── rag.py # Contains the RAG logic for PDF and web search
 ├── utils/
-│   └── llm.py          # Initializes and configures the LLMs and search tools
-├── .env                # Stores secret API keys (you must create this)
-├── .gitignore          # Specifies files for Git to ignore
-├── main.py             # The entry point of the application
-└── requirements.txt    # Lists all Python dependencies
+│ └── llm.py # Initializes and configures the LLMs and search tools
+├── .env # Stores secret API keys (you must create this)
+├── .gitignore # Specifies files for Git to ignore
+├── main.py # The entry point of the application
+└── requirements.txt # Lists all Python dependencies
 
 ---
